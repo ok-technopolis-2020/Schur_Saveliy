@@ -5,19 +5,72 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <h1 align="center" class="todos">todos</h1>
-        <form>
-            <p>What needs to be done?</p>
-            <p><input type="radio" name="answer" value="HTML">HTML <span class="close"></span></p>
-            <p><input type="radio" name="answer" value="CSS">CSS <span class="close"></span></p>
-            <p><input type="radio" name="answer" value="JS">JS <span class="close"></span></p>
-            <p><input type="radio" name="answer" value="JS tools">JS tools <span class="close"></span></p>
-            <p><br></p>
-            <p>3 item left 
-                <button class="All">All</button> 
-                <button class="Active">Active</button> 
-                <button class="Completed">Completed</button> 
-                <button class="Clear">Clear completed</button></p>
-        </form>
+        <div class="todo_form">
+            <header class="head_form">
+                <h1>TODOS</h1>
+            </header>
+
+            <main class="form_frame">
+                <section class="form_frame-textfield_and_buttonAllCheck">
+                    <button class="select_all" aria-label="Select all tasks" >
+                        X
+                    </button>
+                    <div class="input_new_item">
+                        <input type="text" class="input_new_item_textfield" placeholder="What needs to be done?" 
+                        aria-label="input new item">
+                    </div>
+                </section>
+
+                <section class="tasks">
+                    <div class="Select_tasks">
+                        <label class="item">
+                            <input type="checkbox" name="answer" value="HTML" aria-label="choose html">
+                            <span class="task_choose_text">HTML</span>
+                            <button class="delete_item">X</button>
+                        </label>
+                        <label class="item">
+                            <input type="checkbox" name="answer" value="CSS" aria-label="choose css">
+                            <span class="task_choose_text">CSS</span>
+                            <button class="delete_item">X</button>
+                        </label>
+                        <label class="item">
+                            <input type="checkbox" name="answer" value="JS" aria-label="choose js">
+                            <span class="task_choose_text">JS</span>
+                            <button class="delete_item">X</button>
+                        </label>
+                        <label class="item">
+                            <input type="checkbox" name="answer" value="JS tools" aria-label="choose js tools">
+                            <span class="task_choose_text">JS tools</span>
+                            <button class="delete_item">X</button>
+                        </label>
+                    </div>
+                </section>
+
+                <footer class="action_bar">
+                        <div class="action_bar_items"> 
+                            3 items left
+                        </div>
+                        <div class="action_bar_items">
+                            <div class="task-filters" role="group" aria-label="Filter task by status">
+                                <label class="task-filter_item"> 
+                                    <input type="radio" class="task-filter_input" name="filter" checked="checked" value="All">
+                                    <span class="task-filter_text" aria-label="Select all tasks">All</span>
+                                </label>
+                                <label class="task-filter_item">
+                                    <input type="radio" class="task-filter_input" name="filter" value="Active">
+                                    <span class="task-filter_text" aria-label="Select active tasks">Active</span>
+                                </label>
+                                <label class="task-filter_item">
+                                    <input type="radio" class="task-filter_input" name="filter" value="Completed">
+                                    <span class="task-filter_text" aria-label="Select completed tasks">Completed</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="action_bar_items">
+                            <button class="task_clear_completed">Clear completed</button>
+                        </div>
+                </footer>
+            </main>
+        </div>
     </body>
 </html>
