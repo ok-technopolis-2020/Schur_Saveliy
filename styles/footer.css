@@ -1,0 +1,57 @@
+.action_bar {
+    background-color: var(--theme-color);
+    border-top: 1px solid var(--grey-color);
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 92px auto 124px;
+    align-items: center;
+    padding: 12px 12px;
+  }
+  
+  .task_clear_completed {
+    color: #888888;
+    border: none;
+    font-size: 14px;
+    justify-self: right;
+    cursor: pointer;
+    background-color: transparent;
+    outline-color: var(--outline-color);
+    padding: 3px;
+  }
+  
+  .task_clear_completed:hover {
+    background-color: var(--hover-grey-color);
+  }
+  
+  .task_clear_completed:focus {
+    background-color: var(--hover-grey-color);
+  }
+  
+  .action_bar_items_tabs {
+    display: flex;
+  }
+  
+  .action_bar_items {
+    font-size: 14px;
+    color: #888888;
+  }
+  
+  .task-filter_item ~ label {
+    color: #888888;
+    border-radius: 5px;
+    padding: 3px 9px;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  
+  .task-filter_item:not(:checked) ~ label:hover {
+    background-color: var(--hover-grey-color);
+  }
+  
+  .task-filter_item {
+    appearance: none;
+  }
+  
+  .task-filter_item:checked ~ label {
+    border: 1px solid var(--grey-color);
+  }

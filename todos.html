@@ -3,11 +3,15 @@
     <head>
         <title>Homework Schur Saveliy</title>
         <meta charset="UTF-8">
+        <link href="./styles/header.css" rel="stylesheet">
+        <link href="./styles/main.css" rel="stylesheet">
+        <link href="./styles/root.css" rel="stylesheet">
+        <link href="./styles/footer.css" rel="stylesheet">
     </head>
     <body>
         <div class="todo_form">
             <header class="head_form">
-                <h1>TODOS</h1>
+                <h1 class="head_form_text">TODOS</h1>
             </header>
 
             <main class="form_frame">
@@ -25,40 +29,48 @@
                     <div class="Select_tasks">
                         <ul class="task-list">
                             <li class="item">
-                                <label class="item_view">
-                                    <input type="checkbox" name="answer" value="HTML" aria-label="choose html">
-                                    <span class="task_choose_text">HTML</span>
-                                </label>
-                                <div class="delite_item">
-                                    <button class="delete_item_button">X</button>
+                                <div class="task">
+                                    <label class="item_view">
+                                        <input class="item-checkbox" type="checkbox" name="answer" value="HTML" aria-label="choose html">
+                                        <span class="task_choose_text">HTML</span>
+                                    </label>
+                                    <div class="delite_item">
+                                        <button class="delete_item_button">X</button>
+                                    </div>
                                 </div>
                             </li>
                             <li class="item">
-                                <label class="item">
-                                    <input type="checkbox" name="answer" value="CSS" aria-label="choose css">
-                                    <span class="task_choose_text">CSS</span>
-                                </label>
-                                <div class="delite_item">
-                                    <button class="delete_item_button">X</button>
+                                <div class="task">
+                                    <label class="item">
+                                        <input class="item-checkbox" type="checkbox" name="answer" value="CSS" aria-label="choose css">
+                                        <span class="task_choose_text">CSS</span>
+                                    </label>
+                                    <div class="delite_item">
+                                        <button class="delete_item_button">X</button>
+                                    </div>
                                 </div>
                             </li>
                             <li class="item">
-                                <label class="item">
-                                    <input type="checkbox" name="answer" value="JS" aria-label="choose js">
-                                    <span class="task_choose_text">JS</span>
-                                </label>
-                                <div class="delite_item">
-                                    <button class="delete_item_button">X</button>
-                                </div>
+                                <div class="task">
+                                    <label class="item">
+                                        <input class="item-checkbox" type="checkbox" name="answer" value="JS" aria-label="choose js">
+                                        <span class="task_choose_text">JS</span>
+                                    </label>
+                                    <div class="delite_item">
+                                        <button class="delete_item_button">X</button>
+                                    </div>
+                                </div>    
                             </li>
                             <li class="item">
-                                <label class="item">
-                                    <input type="checkbox" name="answer" value="JS tools" aria-label="choose js tools">
-                                    <span class="task_choose_text">JS tools</span>
-                                </label>
-                                <div class="delite_item">
-                                    <button class="delete_item_button">X</button>
-                                </div>
+                                <div class="task">
+                                    <label class="item">
+                                        <input class="item-checkbox" type="checkbox" name="answer" value="JS tools" aria-label="choose js tools">
+                                        <span class="task_choose_text">JS tools</span>
+                                    </label>
+                                    <div class="delite_item">
+                                        <button class="delete_item_button">X</button>
+                                    </div>
+                                </div> 
                             </li>
                         </ul>
                     </div>
@@ -68,7 +80,7 @@
                         <div class="action_bar_items"> 
                             3 items left
                         </div>
-                        <div class="action_bar_items">
+                        <div class="action_bar_items_tabs">
                             <div class="task-filters" role="group" aria-label="Filter task by status">
                                 <label class="task-filter_item"> 
                                     <input type="radio" class="task-filter_input" name="filter" checked="checked" value="All">
