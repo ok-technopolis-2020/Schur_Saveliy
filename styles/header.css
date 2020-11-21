@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 
+.select_all{
+    margin: 5px;
+    background: url("../assets/toogle-icon.svg") no-repeat center center;
+    height: 36px;
+    width: 36px;
+    border-style: solid;
+    border-color: transparent;
+}
+
 .form_frame {
   position: relative;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -7,41 +16,41 @@
 }
 
 .form_frame::before {
-  display: block;
-  background-color: transparent;
-  content: "kek";
-  top: 5px;
-  left: 0.5%;
-  width: 99%;
-  height: 100%;
-  z-index: -200;
-  background-color: var(--theme-color);
-  position: absolute;
-  z-index: -5;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-}
+    display: block;
+    background-color: transparent;
+    content: "";
+    top: 5px;
+    left: 0.5%;
+    width: 99%;
+    height: 100%;
+    z-index: -200;
+    background-color: var(--theme-color);
+    position: absolute;
+    z-index: -5;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form_frame::after {
+    display: block;
+    background-color: transparent;
+    content: "";
+    top: 10px;
+    left: 1%;
+    width: 98%;
+    height: 100%;
+    background-color: var(--theme-color);
+    z-index: -201;
+    position: absolute;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
 
-.form_frame::after {
-  display: block;
-  background-color: transparent;
-  content: "";
-  top: 10px;
-  left: 1%;
-  width: 98%;
-  height: 100%;
-  background-color: var(--theme-color);
-  z-index: -201;
-  position: absolute;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.form_frame-textfield_and_buttonAllCheck {
-  position: sticky;
-  top: 0;
-  display: flex;
-  width: 100%;
-  height: 66px;
-  z-index: 100;
-  background-color: var(--theme-color);
-  border-bottom: 1px solid var(--grey-color);
-}
+  .head_form {
+      font-size: 40px;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      line-height: 21px;
+      color: #CCCCCC;
+      font-weight: 100;
+      letter-spacing: -1px;
+      text-align: center;
+  }

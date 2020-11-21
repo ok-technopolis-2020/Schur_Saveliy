@@ -1,4 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding-left: 0px;
+    margin-block-start: 0rem;
+}
+
+.input_new_item_textfield {
+    border: none;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+}
+
+.form_frame-textfield_and_buttonAllCheck {
+    background-color: var(--theme-color);
+    border-bottom: 1px solid var(--grey-color);
+    display: grid;
+    grid-template-columns: 92px auto 124px;
+    padding: 12px 12px;
+}
+
+.item {
+    width: 562px;
+    height: 64px;
+    padding: 6px;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    display: grid;
+}
 .delete_item_button {
-    background: url(../assets/remove-button.svg) no-repeat;
+    background: url("../assets/remove-button.svg") no-repeat center center;
+    height: 24px;
+    width: 24px;
+    border-style: solid;
+    border-color: transparent;
+    margin-left: 530px;
+    margin-right: 5px;
+    position: relative;
+    top: -20%;
+    opacity: 0;
+}
+
+.delete_item_button:hover {
+    border-color: tomato;
+    opacity: 1;
+}
+
+.delite_item {
+    display: inline-block;
+}
+
+.item-checkbox {
+    outline-color: var(--outline-color);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.item-checkbox::before {
+    position: absolute;
+    display: block;
+    text-align: center;
+    margin-left: 12px;
+    cursor: pointer;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    background-size: cover;
+    border: 1px solid var(--grey-color);
+    transform: translate(-50%, -50%);
+    margin-top: 6px;
+    margin-left: 20px;
+}
+
+.item-checkbox:focus::before {
+    outline: 2px solid var(--outline-color);
+}
+
+.item-checkbox:hover::before {
+    background: no-repeat center white url(/assets/done-not-active.svg);
+      color: var(--grey-color);
+}
+
+.item-checkbox:checked::before {
+    background: no-repeat center white url(/assets/done.svg);
+}
+
+
+.task_choose_text {
+    position: relative;
+    top: 15px;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+.tasks {
+    background-color: var(--theme-color);
+    margin-top: 0px;
+    height: 300px;
+}
+
+.item-checkbox:checked + .task_choose_text {
+    text-decoration: line-through;
+    color: var(--grey-color);
 }
