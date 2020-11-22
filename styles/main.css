@@ -62,9 +62,7 @@ ul {
 
 .item-checkbox {
     outline-color: var(--outline-color);
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    appearance: none;   
 }
 
 .item-checkbox::before {
