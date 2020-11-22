@@ -36,7 +36,7 @@
     color: #888888;
   }
   
-  .task-filter_item ~ label {
+  .task-filter_input ~ span {
     color: #888888;
     border-radius: 5px;
     padding: 3px 9px;
@@ -44,14 +44,14 @@
     border: 1px solid transparent;
   }
   
-  .task-filter_item:not(:checked) ~ label:hover {
+  .task-filter_input:not(:checked) ~ span:hover {
     background-color: var(--hover-grey-color);
   }
   
-  .task-filter_item {
+  .task-filter_input {
     appearance: none;
   }
   
-  .task-filter_item:checked ~ label {
+  .task-filter_input:checked ~ span {
     border: 1px solid var(--grey-color);
   }

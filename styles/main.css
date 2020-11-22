@@ -8,6 +8,7 @@ li {
 ul {
     padding-left: 0px;
     margin-block-start: 0rem;
+    margin-block-end: 0rem;
 }
 
 .input_new_item_textfield {
@@ -20,18 +21,18 @@ ul {
     background-color: var(--theme-color);
     border-bottom: 1px solid var(--grey-color);
     display: grid;
-    grid-template-columns: 92px auto 124px;
-    padding: 12px 12px;
+    grid-template-columns: 50px auto 1px;
+    padding: 8px 8px;
 }
 
 .item {
     width: 562px;
-    height: 64px;
-    padding: 6px;
+    height: auto;
+    min-height: 64px;
+    padding: 2px;
     border-bottom-style: solid;
     border-bottom-width: thin;
     border-bottom-color: rgba(0, 0, 0, 0.2);
-    display: grid;
 }
 .delete_item_button {
     background: url("../assets/remove-button.svg") no-repeat center center;
@@ -48,6 +49,10 @@ ul {
 
 .delete_item_button:hover {
     border-color: tomato;
+    opacity: 1;
+}
+
+.delete_item_button:focus{
     opacity: 1;
 }
 
@@ -85,29 +90,30 @@ ul {
 }
 
 .item-checkbox:hover::before {
-    background: no-repeat center white url(/assets/done-not-active.svg);
+    background: no-repeat center white url("../assets/done-not-active.svg");
       color: var(--grey-color);
 }
 
 .item-checkbox:checked::before {
-    background: no-repeat center white url(/assets/done.svg);
+    background: no-repeat center white url("../assets/done.svg");
 }
-
 
 .task_choose_text {
     position: relative;
-    top: 15px;
+    display: inline-flex;
     margin-left: 50px;
     text-align: center;
     font-size: 24px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
+    word-break: break-all;
 }
 
 .tasks {
     background-color: var(--theme-color);
     margin-top: 0px;
-    height: 300px;
+    min-height: 300px;
+    height: auto;
 }
 
 .item-checkbox:checked + .task_choose_text {

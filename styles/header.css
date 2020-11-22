@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 
 .select_all{
-    margin: 5px;
+    margin: 3px;
     background: url("../assets/toogle-icon.svg") no-repeat center center;
     height: 36px;
     width: 36px;
